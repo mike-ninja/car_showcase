@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { CustomButton } from ".";
 
-const Hero = () => {
+export default function Hero () {
   const handleScroll = () => {
   };
   return (
@@ -31,5 +31,3 @@ const Hero = () => {
     </div>
   );
 };
-
-export default Hero;

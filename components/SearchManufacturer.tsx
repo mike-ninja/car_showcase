@@ -3,7 +3,7 @@ import React, { Fragment, useState } from "react";
 import { SearchManufacturerProps } from "@/types";
 import { Combobox, Transition } from "@headlessui/react";
 import Image from "next/image";
-import { manufacturers } from "@/contants";
+import { manufacturers } from "@/constants";
 
 export default function SearchManufacturer(
   { manufacturer, setManufacturer }: SearchManufacturerProps,
