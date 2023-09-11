@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { CarProps } from "@/types";
 import { CustomButton } from ".";
-import { calculateCarRent } from "@/utils";
+import { calculateCarRent, generateCarImageUrl } from "@/utils";
 import CarDetails from "./CarDetails";
 import Image from "next/image";
 
@@ -32,7 +32,7 @@ export default function CarCard({ car }: CarCardProps) {
 
       <div className="relative w-full h-40 my-3 object-contain">
         <Image
-          src="/hero.png"
+          src={generateCarImageUrl(car)}
           alt="car model"
           fill
           priority
